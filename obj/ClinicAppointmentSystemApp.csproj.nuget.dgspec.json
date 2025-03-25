@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dotnet\\assignment\\ClinicAppointmentSystemApp\\ClinicAppointmentSystemApp.csproj": {}
+    "C:\\dotnet\\New folder\\ClinicAppointmentSystemApp\\ClinicAppointmentSystemApp.csproj": {}
   },
   "projects": {
-    "C:\\dotnet\\assignment\\ClinicAppointmentSystemApp\\ClinicAppointmentSystemApp.csproj": {
+    "C:\\dotnet\\New folder\\ClinicAppointmentSystemApp\\ClinicAppointmentSystemApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dotnet\\assignment\\ClinicAppointmentSystemApp\\ClinicAppointmentSystemApp.csproj",
+        "projectUniqueName": "C:\\dotnet\\New folder\\ClinicAppointmentSystemApp\\ClinicAppointmentSystemApp.csproj",
         "projectName": "ClinicAppointmentSystemApp",
-        "projectPath": "C:\\dotnet\\assignment\\ClinicAppointmentSystemApp\\ClinicAppointmentSystemApp.csproj",
+        "projectPath": "C:\\dotnet\\New folder\\ClinicAppointmentSystemApp\\ClinicAppointmentSystemApp.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\dotnet\\assignment\\ClinicAppointmentSystemApp\\obj\\",
+        "outputPath": "C:\\dotnet\\New folder\\ClinicAppointmentSystemApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
