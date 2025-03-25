@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers"
   ],
+  "SelectedNode": "\\ClinicAppointmentSystemApp.csproj",
   "PreviewInSolutionExplorer": false
 }

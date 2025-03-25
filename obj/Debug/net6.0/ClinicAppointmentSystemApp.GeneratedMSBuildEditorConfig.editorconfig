@@ -9,145 +9,145 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ClinicAppointmentSystemApp
 build_property.RootNamespace = ClinicAppointmentSystemApp
-build_property.ProjectDir = C:\dotnet\New folder\ClinicAppointmentSystemApp\
+build_property.ProjectDir = C:\dotnet\ClinicAppointmentSystemApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\dotnet\New folder\ClinicAppointmentSystemApp
+build_property.MSBuildProjectDirectory = C:\dotnet\ClinicAppointmentSystemApp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Account/ChangePassword.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Account/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Account/Login.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Account/Register.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Account/VerifyEmail.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Account/VerifyEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxWZXJpZnlFbWFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Admin/Doctors.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Admin/Doctors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRG9jdG9ycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Admin/Index.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Admin/Patients.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Admin/Patients.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGF0aWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/AddAppointment.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/AddAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQWRkQXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/Details.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/DetailsforUser.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/DetailsforUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcRGV0YWlsc2ZvclVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/GetAllAppointmentById.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/GetAllAppointmentById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcR2V0QWxsQXBwb2ludG1lbnRCeUlkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/GetAppointment.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/GetAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcR2V0QXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/GetAppointments.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/GetAppointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcR2V0QXBwb2ludG1lbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/GetPatentAppointment.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/GetPatentAppointment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcR2V0UGF0ZW50QXBwb2ludG1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/UpdateStatus.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/UpdateStatus.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVXBkYXRlU3RhdHVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/UpdateStatusAndTime.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/UpdateStatusAndTime.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVXBkYXRlU3RhdHVzQW5kVGltZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Appointment/UpdateStatusAndTimeForUser.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Appointment/UpdateStatusAndTimeForUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcVXBkYXRlU3RhdHVzQW5kVGltZUZvclVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Doctor/AddDoctor.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Doctor/AddDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEFkZERvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Doctor/DeleteDoctor.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Doctor/DeleteDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERlbGV0ZURvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Doctor/GetDoctor.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Doctor/GetDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEdldERvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Doctor/GetDoctors.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Doctor/GetDoctors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEdldERvY3RvcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Doctor/UpdateDoctor.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Doctor/UpdateDoctor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXFVwZGF0ZURvY3Rvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Home/dashboard.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Home/dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Home/Index.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Home/Privacy.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Patient/Index.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Shared/Error.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Shared/_AccountLayout.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Shared/_AccountLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Shared/_LoginPartial.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/_ViewImports.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/_ViewStart.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/dotnet/New folder/ClinicAppointmentSystemApp/Views/Shared/_Layout.cshtml]
+[C:/dotnet/ClinicAppointmentSystemApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-glvct9gxdh

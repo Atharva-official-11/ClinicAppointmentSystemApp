@@ -17,12 +17,12 @@ The **Clinic Appointment System** is a web-based application that allows patient
 ![Features](./ImagesToGithub/Screenshot%20(11).png)
 
 ![Features](./ImagesToGithub/Screenshot%20(7).png)
-![Features](./ImagesToGithub/Screenshot%20(8).png)
+![Features](./ImagesToGithub/Screenshot%20(13).png)
 
-![Features](./ImagesToGithub/Screenshot%20(9).png)
+![Features](./ImagesToGithub/Screenshot%20(14).png)
 
 ![Features](./ImagesToGithub/Screenshot%20(10).png)
-![Features](./ImagesToGithub/Screenshot%20(4).png)
+![Features](./ImagesToGithub/Screenshot%20(12).png)
 ![Features](./ImagesToGithub/Screenshot%20(5).png)
 
 ## Technologies Used
