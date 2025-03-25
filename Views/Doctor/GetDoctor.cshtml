@@ -1,0 +1,88 @@
+﻿@model ClinicAppointmentSystemApp.Models.Doctor
+
+@{
+    ViewData["Title"] = "Doctor Details";
+}
+
+<div class="container">
+    <h1 class="text-center text-primary mb-4">Doctor Details</h1>
+
+    <div class="card shadow-lg p-4">
+        <div class="card-body">
+            <h4 class="text-secondary">Doctor Information</h4>
+            <hr />
+
+            <dl class="row">
+                <!-- Doctor Name -->
+                <dt class="col-sm-3 fw-bold text-dark">
+                    @Html.DisplayNameFor(model => model.DoctorName)
+                </dt>
+                <dd class="col-sm-9 text-muted">
+                    @Html.DisplayFor(model => model.DoctorName)
+                </dd>
+
+                <!-- Specialty -->
+                <dt class="col-sm-3 fw-bold text-dark">
+                    @Html.DisplayNameFor(model => model.Specialty)
+                </dt>
+                <dd class="col-sm-9 text-muted">
+                    @Html.DisplayFor(model => model.Specialty)
+                </dd>
+            </dl>
+
+            <!-- Action Buttons -->
+            <div class="d-flex justify-content-between mt-4">
+                <a asp-action="GetDoctors" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Back to List
+                </a>
+                <a asp-action="UpdateDoctor" asp-route-id="@Model?.DoctorId" class="btn btn-warning">
+                    <i class="bi bi-pencil"></i> Edit
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* @model ClinicAppointmentSystemApp.Models.Doctor
+
+@{
+    ViewData["Title"] = "GetDoctor";
+}
+
+<h1>GetDoctor</h1>
+
+<div>
+    <h4>Doctor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DoctorName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DoctorName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Specialty)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Specialty)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.DoctorId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+ *@

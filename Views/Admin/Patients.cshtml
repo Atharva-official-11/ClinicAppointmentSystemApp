@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ClinicAppointmentSystemApp.Models.User>
+
+@{
+    ViewData["Title"] = "Manage Patients";
+}
+
+<div class="container mt-4">
+    <h2>Manage Patients</h2>
+    <hr>
+    <a href="@Url.Action("AddPatient", "Admin")" class="btn btn-primary mb-3">Add New Patient</a>
+
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var patient in Model)
+            {
+                <tr>
+                    <td>@patient.FirstName</td>
+                    <td>@patient.LastName</td>
+                    <td>@patient.Email</td>
+                    <td>
+                        <a href="@Url.Action("EditPatient", "Admin", new { id = patient.Id })" class="btn btn-warning">Edit</a>
+                        <form asp-action="DeletePatient" asp-route-id="@patient.Id" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

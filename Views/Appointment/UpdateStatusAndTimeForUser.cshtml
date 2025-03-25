@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "Update Appointment Schedule and Status";
+}
+
+<h1 class="text-center text-primary">Update Appointment Schedule & Status</h1>
+
+<div class="card shadow-lg p-4 mt-4">
+    <div class="card-body">
+        <h4 class="text-secondary">Current Appointment Details</h4>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-4 fw-bold text-dark">Current Status:</dt>
+            <dd class="col-sm-8">
+                <span class="badge bg-@(ViewData["CurrentStatus"]?.ToString() == "Confirmed" ? "success"
+                    : ViewData["CurrentStatus"]?.ToString() == "Scheduled" ? "primary" : "danger")">
+                    @ViewData["CurrentStatus"]
+                </span>
+            </dd>
+
+            <dt class="col-sm-4 fw-bold text-dark">Current Appointment Date:</dt>
+            <dd class="col-sm-8 text-muted">
+                @ViewData["CurrentAppointmentDate"]
+            </dd>
+        </dl>
+
+        <h4 class="text-secondary mt-4">Update Appointment</h4>
+        <hr />
+
+        <form asp-action="UpdateStatusAndTimeForUser" method="post">
+            <input type="hidden" name="id" value="@ViewBag.AppointmentId" />
+
+            <div class="mb-3">
+                <label for="status" class="form-label fw-bold">Select New Status:</label>
+                <select name="status" class="form-control">
+                    <option value="Scheduled">Scheduled</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Canceled">Canceled</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="appointmentDate" class="form-label fw-bold">Select New Appointment Date:</label>
+                <input type="datetime-local" name="appointmentDate" class="form-control" value="@ViewBag.CurrentAppointmentDate" />
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <a asp-action="GetAllAppointmentById" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Back to List
+                </a>
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-save"></i> Update Schedule & Status
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* @{
+    ViewBag.Title = "Update Appointment Schedule and Status";
+
+}
+
+<h2>Update Appointment Schedule and Status</h2>
+
+<!-- Display the current status and schedule -->
+<p><strong>Current Status:</strong> @ViewData["CurrentStatus"]</p>
+<p><strong>Current Appointment Date:</strong> @ViewData["CurrentAppointmentDate"]</p>
+
+<!-- Form to update the status and schedule -->
+<form asp-action="UpdateStatusAndTimeForUser" method="post">
+    <input type="hidden" name="id" value="@ViewBag.AppointmentId" /> <!-- Pass the appointment ID -->
+    <div class="form-group">
+        <label for="status">Select New Status:</label>
+        <select name="status" class="form-control">
+            <option value="Scheduled">Scheduled</option>
+            <option value="Completed">Completed</option>
+            <option value="Canceled">Canceled</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="appointmentDate">Select New Appointment Date:</label>
+        <input type="datetime-local" name="appointmentDate" class="form-control" value="@ViewBag.CurrentAppointmentDate" />
+    </div>
+    <button type="submit" class="btn btn-primary mb-3 mt-3">Update Schedule and Status</button>
+</form>
+
+<!-- Link to go back to the appointment list -->
+<a asp-action="GetAllAppointmentById" class="btn btn-secondary">Back to List</a> *@

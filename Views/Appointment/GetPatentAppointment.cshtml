@@ -1,0 +1,140 @@
+﻿@model IEnumerable<ClinicAppointmentSystemApp.Models.Appointment>
+
+@{
+    ViewData["Title"] = "GetPatientAppointments";
+}
+
+<h1 class="text-center mt-4">Patient Appointments</h1>
+
+<div class="text-end mb-3">
+    <a asp-action="AddAppointment" class="btn btn-primary btn-lg shadow-sm">
+        <i class="fas fa-plus"></i> Create New
+    </a>
+</div>
+
+<table class="table table-bordered table-hover shadow-sm">
+    <thead class="table-dark">
+        <tr>
+            @* <th>Patient ID</th> *@
+            <th>Doctor Name</th>
+            <th>Appointment Date</th>
+            <th>Status</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                @* <td>@Html.DisplayFor(modelItem => item.Patient.Id)</td> *@
+                <td>@Html.DisplayFor(modelItem => item.Doctor.DoctorName)</td>
+                <td>@item.AppointmentDate.ToString("dd MMM yyyy")</td>
+                <td>
+                    <span class="badge @(item.Status.ToString() == "Confirmed" ? "bg-success" : "bg-warning")">
+                        @Html.DisplayFor(modelItem => item.Status)
+                    </span>
+                </td>
+                <td class="text-center">
+                    <a asp-action="UpdateStatusAndTimeForUser" asp-route-id="@item.AppointmentId" class="btn btn-sm btn-warning">
+                        <i class="fas fa-edit"></i> Edit
+                    </a>
+                    <a asp-action="DetailsforUser" asp-route-id="@item.AppointmentId" class="btn btn-sm btn-info">
+                        <i class="fas fa-info-circle"></i> Details
+                    </a>
+                    @* <a asp-action="Delete" asp-route-id="@item.AppointmentId" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this appointment?');"> *@
+                    @*     <i class="fas fa-trash"></i> Delete *@
+                    @* </a> *@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+.btn-primary {
+        background: linear-gradient(to right, #1c88c6, #da1f34);
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, #da1f34, #1c88c6);
+            transform: scale(1.05);
+        }
+
+    .btn-warning:hover, .btn-info:hover {
+        transform: scale(1.05);
+    }
+
+
+</style>
+
+
+
+@* @model IEnumerable<ClinicAppointmentSystemApp.Models.Appointment>
+
+@{
+    ViewData["Title"] = "GetPatentAppointment";
+}
+
+<h1>GetPatentAppointment</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Patient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Patient.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doctor.DoctorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppointmentDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AppointmentId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.AppointmentId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.AppointmentId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+ *@

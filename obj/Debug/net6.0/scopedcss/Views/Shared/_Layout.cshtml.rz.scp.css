@@ -1,0 +1,70 @@
+/* Global Styles */
+body[b-glvct9gxdh] {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero[b-glvct9gxdh] {
+    background: linear-gradient(to right, #0077cc, #1b6ec2);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+    .hero h1[b-glvct9gxdh] {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .hero p[b-glvct9gxdh] {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero img[b-glvct9gxdh] {
+        max-width: 90%;
+    }
+
+/* Buttons */
+.btn-primary[b-glvct9gxdh] {
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+    .btn-primary:hover[b-glvct9gxdh] {
+        background-color: #155a9a;
+        border-color: #134d85;
+    }
+
+/* Footer */
+.footer[b-glvct9gxdh] {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1[b-glvct9gxdh] {
+        font-size: 2rem;
+    }
+
+    .hero img[b-glvct9gxdh] {
+        max-width: 70%;
+    }
+}
+
+/* Hero Title Custom Styling */
+.hero-title[b-glvct9gxdh] {
+    font-size: 42px; /* Increased font size */
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Colors */
+.text-danger[b-glvct9gxdh] {
+    color: #da1f34 !important;
+}
+
+.text-primary[b-glvct9gxdh] {
+    color: #1c88c6 !important;
+}

@@ -1,0 +1,93 @@
+﻿Flow of project
+
+1) Create models with all entity Doctor , Appointment
+2) Make User Entity Using Identity
+3) Now Creating Repo , services , and controller 
+   --->1->Repo is connected to database inheriate dbContext class
+       2->Services inheriate repo to keep secure the all code and handle exceptins from repo
+       3->Controller took the services readonly variable and create by default contruture object to used functionality 
+   <---
+
+
+
+
+
+
+
+   23/3/25
+   *) authorization &  authentication -> 1)In this first set up the data in program.cs
+                                         2)Then create the viewModels 
+                                         3)Partial view for login and & logout navbar
+                                         4)Then create controller on base of controller add the empty razor and using viewmodel we write the css for each action
+                                         5)design the login register , forgotpassword , verifyemail pages
+                                         6)Functionalities 
+
+   23/3/25
+   *) Role wise authorization & how to show specific info to specific user role --> 
+                                    [Authorize] it will be only access if user is authorized
+                                    [Authorize(Role="Member")] --- only authorize for the member can access
+                                    directly seeded the doctor , admin in the sqlservermanagementsystem
+   
+  ********** Imp Doctor is my Goerge mathe' and admin is levi
+
+
+   Learning for rnum 
+    <div class="form-group">
+     <label asp-for="Status" class="control-label"></label>
+     <select asp-for="Status" class="form-control" asp-items="Html.GetEnumSelectList<Status>()">
+         <option value="" ></option>
+     </select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+private static async Task SeedRolesAndAdmin(IServiceProvider serviceProvider) {
+    var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+ 
+    string[] roleNames = { "Patient", "Doctor", "Admin" };
+ 
+    foreach (var roleName in roleNames) {
+        if (!await roleManager.RoleExistsAsync(roleName)) {
+            await roleManager.CreateAsync(new IdentityRole(roleName));
+        }
+    }
+ 
+    // 🔹 Create Default Admin User
+    string adminEmail = "admin@example.com";
+    string adminPassword = "Admin@123";
+ 
+    var adminUser = await userManager.FindByEmailAsync(adminEmail);
+    if (adminUser == null) {
+        var newAdmin = new ApplicationUser {
+            UserName = adminEmail,
+            Email = adminEmail,
+            FirstName = "Admin",
+            LastName = "User",
+            EmailConfirmed = true
+        };
+ 
+        var result = await userManager.CreateAsync(newAdmin, adminPassword);
+        if (result.Succeeded) {
+            await userManager.AddToRoleAsync(newAdmin, "Admin");
+        }
+    }
+}
+    

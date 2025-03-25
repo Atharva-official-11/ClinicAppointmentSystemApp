@@ -1,0 +1,147 @@
+﻿@model IEnumerable<ClinicAppointmentSystemApp.Models.Appointment>
+
+@{
+    ViewData["Title"] = "Appointments List";
+}
+
+<h1 class="text-center text-primary">Appointments</h1>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="text-secondary">Manage Appointments</h4>
+    <a asp-action="AddAppointment" class="btn btn-success btn-primary btn-lg shadow-sm">
+        <i class="bi bi-plus-circle"></i> Create New Appointment
+    </a>
+</div>
+
+<div class="card shadow-lg p-4">
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Patient</th>
+                    <th>Doctor</th>
+                    <th>Appointment Date</th>
+                    <th>Status</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Patient.FirstName @item.Patient.LastName</td>
+                        <td>@item.Doctor.DoctorName</td>
+                        <td>@item.AppointmentDate.ToString("dd MMM yyyy hh:mm tt")</td>
+                        <td>
+                            <span class="badge bg-@(item.Status.ToString() == "Confirmed" ? "success" : item.Status.ToString() == "Scheduled" ? "primary" : "danger")">
+                                @item.Status
+                            </span>
+                        </td>
+                        <td class="text-center">
+                            <a asp-action="UpdateStatusAndTime" asp-route-id="@item.AppointmentId" class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </a>
+                            <a asp-action="Details" asp-route-id="@item.AppointmentId" class="btn btn-info btn-sm">
+                                <i class="bi bi-eye"></i> Details
+                            </a>
+                            <a asp-action="DeleteAppointment" asp-route-id="@item.AppointmentId" class="btn btn-danger btn-sm">
+                                <i class="bi bi-trash"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+
+    .btn-primary {
+        background: linear-gradient(to right, #1c88c6, #da1f34);
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(to right, #da1f34, #1c88c6);
+            transform: scale(1.05);
+        }
+
+    .btn-warning:hover, .btn-info:hover {
+        transform: scale(1.05);
+    }
+
+</style>
+
+
+
+
+
+
+@* @model IEnumerable<ClinicAppointmentSystemApp.Models.Appointment>
+
+@{
+    ViewData["Title"] = "GetAppointments";
+}
+
+<h1>GetAppointments</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Patient)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Patient.FirstName)
+                @Html.DisplayFor(modelItem => item.Patient.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doctor.DoctorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppointmentDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-action="UpdateStatusAndTime" asp-route-id="@item.AppointmentId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.AppointmentId">Details</a> |
+                <a asp-action="DeleteAppointment" asp-route-id="@item.AppointmentId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+ *@

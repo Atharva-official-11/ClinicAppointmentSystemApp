@@ -1,0 +1,137 @@
+﻿@model ClinicAppointmentSystemApp.Models.Appointment
+
+@{
+    ViewData["Title"] = "Details";
+    var FullName = ViewData["FullName"];
+}
+
+<h1 class="text-center text-primary">Appointment Details</h1>
+
+<div class="card shadow-lg p-4 mt-4">
+    <h3 class="text-danger">Are you sure you want to delete this?</h3>
+
+    <div class="card-body">
+        <h4 class="text-secondary">Appointment Information</h4>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-3 fw-bold text-dark">
+                @Html.DisplayNameFor(model => model.Patient)
+            </dt>
+            <dd class="col-sm-9 text-muted">
+                @Html.DisplayFor(model => model.Patient.FirstName) @Html.DisplayFor(model => model.Patient.LastName)
+            </dd>
+
+            <dt class="col-sm-3 fw-bold text-dark">
+                @Html.DisplayNameFor(model => model.Doctor)
+            </dt>
+            <dd class="col-sm-9 text-muted">
+                @Html.DisplayFor(model => model.Doctor.DoctorName)
+            </dd>
+
+            <dt class="col-sm-3 fw-bold text-dark">
+                @Html.DisplayNameFor(model => model.AppointmentDate)
+            </dt>
+            <dd class="col-sm-9 text-muted">
+                @Html.DisplayFor(model => model.AppointmentDate)
+            </dd>
+
+            <dt class="col-sm-3 fw-bold text-dark">
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+            <dd class="col-sm-9">
+                <span class="badge bg-@(Model.Status.ToString() == "Confirmed" ? "success" : Model.Status.ToString() == "Scheduled" ? "primary" : "danger")">
+                    @Model.Status.ToString()
+                </span>
+            </dd>
+        </dl>
+
+        <form asp-action="Details">
+            <input type="hidden" asp-for="AppointmentId" />
+            <button type="submit" class="btn btn-danger">
+                <i class="bi bi-trash"></i> Delete
+            </button>
+            <a asp-action="GetAppointments" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to List
+            </a>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* @model ClinicAppointmentSystemApp.Models.Appointment *@
+
+@* @{ *@
+@*     ViewData["Title"] = "Details"; *@
+@*     var FullName = ViewData["FullName"]; *@
+@* } *@
+
+@* <h1>Details</h1> *@
+
+@* <h3>Are you sure you want to delete this?</h3> *@
+@* <div> *@
+@*     <h4>Appointment</h4> *@
+@*     <hr /> *@
+@*     <dl class="row"> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.Patient) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.Patient.FirstName) *@
+@*             @Html.DisplayFor(model => model.Patient.LastName) *@
+@*         </dd> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.Doctor) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.Doctor.DoctorName) *@
+@*         </dd> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.AppointmentDate) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.AppointmentDate) *@
+@*         </dd> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.Status) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.Status) *@
+@*         </dd> *@
+@*     </dl> *@
+    
+@*     <form asp-action="Details"> *@
+@*         <input type="hidden" asp-for="AppointmentId" /> *@
+@*         <input type="submit" value="Delete" class="btn btn-danger" /> | *@
+@*         <a asp-action="GetAppointments">Back to List</a> *@
+@*     </form> *@
+@* </div> *@

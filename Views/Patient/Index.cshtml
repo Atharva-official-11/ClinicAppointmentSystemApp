@@ -1,0 +1,231 @@
+﻿@{
+    ViewData["Title"] = "Patient Dashboard";
+}
+
+<div class="container-fluid patient-dashboard">
+    <div class="row">
+        <!-- Sidebar Navigation -->
+        <div class="col-md-3 col-lg-2 d-md-block sidebar">
+            <div class="profile-section text-center p-3">
+                <div class="profile-picture mb-3">
+                    <img src="~/images/default-profile.png" alt="Profile Picture" class="rounded-circle" width="100">
+                </div>
+                <h5>Welcome, Patient!</h5>
+                <p class="text-muted">Member since @DateTime.Now.ToString("MMMM yyyy")</p>
+            </div>
+
+            <nav class="nav flex-column">
+                <a class="nav-link active" href="#">
+                    <i class="fas fa-calendar-alt me-2"></i>My Appointments
+                </a>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-user-edit me-2"></i>Profile Settings
+                </a>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-file-medical me-2"></i>Medical History
+                </a>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-prescription me-2"></i>Prescriptions
+                </a>
+                <a class="nav-link" href="#">
+                    <i class="fas fa-question-circle me-2"></i>Help Center
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="col-md-9 col-lg-10 main-content">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                <h1 class="h2">Appointment Dashboard</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <button class="btn btn-primary me-2">
+                        <i class="fas fa-plus me-1"></i> New Appointment
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card text-white bg-primary mb-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="card-title">Upcoming Appointments</h6>
+                                    <h2 class="mb-0">3</h2>
+                                </div>
+                                <i class="fas fa-calendar-check fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="card-title">Completed</h6>
+                                    <h2 class="mb-0">12</h2>
+                                </div>
+                                <i class="fas fa-check-circle fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-warning mb-3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h6 class="card-title">Pending Actions</h6>
+                                    <h2 class="mb-0">2</h2>
+                                </div>
+                                <i class="fas fa-exclamation-triangle fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Appointments -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-calendar-day me-2"></i>Upcoming Appointments
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Date & Time</th>
+                                    <th>Doctor</th>
+                                    <th>Department</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>May 15, 2023 - 10:00 AM</td>
+                                    <td>Dr. Sarah Johnson</td>
+                                    <td>Cardiology</td>
+                                    <td><span class="badge bg-primary">Confirmed</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary me-1">View</button>
+                                        <button class="btn btn-sm btn-outline-secondary">Reschedule</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>May 22, 2023 - 02:30 PM</td>
+                                    <td>Dr. Michael Chen</td>
+                                    <td>Dermatology</td>
+                                    <td><span class="badge bg-warning text-dark">Pending</span></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-outline-primary me-1">View</button>
+                                        <button class="btn btn-sm btn-outline-danger">Cancel</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-history me-2"></i>Recent Activity
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Appointment with Dr. Lee completed</span>
+                            </div>
+                            <small class="text-muted">2 days ago</small>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="fas fa-calendar-plus text-primary me-2"></i>
+                                <span>New appointment scheduled with Dr. Johnson</span>
+                            </div>
+                            <small class="text-muted">1 week ago</small>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <i class="fas fa-file-medical text-info me-2"></i>
+                                <span>New prescription added</span>
+                            </div>
+                            <small class="text-muted">2 weeks ago</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        .sidebar {
+            background-color: #f8f9fa;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            padding-top: 20px;
+            box-shadow: 1px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-link {
+            color: #495057;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            transition: all 0.3s;
+        }
+
+            .nav-link:hover {
+                background-color: #e9ecef;
+                color: #0d6efd;
+            }
+
+            .nav-link.active {
+                background-color: #0d6efd;
+                color: white;
+            }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .profile-picture img {
+            border: 3px solid #dee2e6;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: white;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+            font-weight: 600;
+        }
+
+        .badge {
+            font-weight: 500;
+            padding: 5px 10px;
+        }
+    </style>
+}

@@ -1,0 +1,162 @@
+﻿@model ClinicAppointmentSystemApp.Models.Appointment
+
+@{
+    ViewData["Title"] = "Add Appointment";
+    var fullName = ViewData["FullName"] as string;
+    var patientId = ViewData["PatientId"] as string;
+}
+
+<h1 class="text-center text-primary">Add Appointment</h1>
+
+<div class="card shadow-lg p-4 mt-4">
+    <div class="card-body">
+        <h4 class="text-secondary">Appointment Details</h4>
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form asp-action="AddAppointment">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <!-- Patient Information (Fixed) -->
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Patient</label>
+                        <input type="text" class="form-control" value="@fullName" readonly />
+                        <input type="hidden" asp-for="PatientId" value="@patientId" />
+                    </div>
+
+                    <!-- Doctor Selection (Dropdown) -->
+                    <div class="mb-3">
+                        <label asp-for="DoctorId" class="form-label fw-bold">Select Doctor</label>
+                        <select asp-for="DoctorId" class="form-select" asp-items="ViewBag.DoctorId">
+                            <option value="">-- Select Doctor --</option>
+                        </select>
+                        <span asp-validation-for="DoctorId" class="text-danger"></span>
+                    </div>
+
+                    <!-- Appointment Date -->
+                    <div class="mb-3">
+                        <label asp-for="AppointmentDate" class="form-label fw-bold">Appointment Date</label>
+                        <input asp-for="AppointmentDate" class="form-control" type="datetime-local" />
+                        <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+                    </div>
+
+                    <!-- Status -->
+                    <div class="mb-3">
+                        <label asp-for="Status" class="form-label fw-bold">Status</label>
+                        <select asp-for="Status" class="form-select" asp-items="@Html.GetEnumSelectList<Status>()">
+                            <option value="">-- Select Status --</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-check-circle"></i> Create Appointment
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Back to List -->
+        <div class="text-center mt-4">
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to List
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* @model ClinicAppointmentSystemApp.Models.Appointment
+
+@{
+    ViewData["Title"] = "AddAppointment";
+    var fullName = ViewData["FullName"] as string;
+    var patientId = ViewData["PatientId"] as string;
+}
+
+<h1>AddAppointment</h1>
+
+<h4>Appointment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddAppointment">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Patient Information (Fixed) -->
+            <div class="form-group">
+                <label class="control-label">Patient</label>
+                <input type="text" class="form-control" value="@fullName" readonly /> <!-- Display FullName -->
+                <input type="hidden" asp-for="PatientId" value="@patientId" /> <!-- Bind PatientId -->
+            </div>
+
+            <!-- Doctor Selection (Dropdown) -->
+            <div class="form-group">
+                <label asp-for="DoctorId" class="control-label"></label>
+                <select asp-for="DoctorId" class="form-control" asp-items="ViewBag.DoctorId">
+                    <option value="">-- Select Doctor --</option>
+                </select>
+                <span asp-validation-for="DoctorId" class="text-danger"></span>
+            </div>
+
+            <!-- Appointment Date -->
+            <div class="form-group">
+                <label asp-for="AppointmentDate" class="control-label"></label>
+                <input asp-for="AppointmentDate" class="form-control" />
+                <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+            </div>
+
+            <!-- Status -->
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control" asp-items="@Html.GetEnumSelectList<Status>()">
+                    <option value="">-- Select Status --</option>
+                </select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} *@
